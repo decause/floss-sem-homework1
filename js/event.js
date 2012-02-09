@@ -42,7 +42,7 @@ window.onload = function () {
         return;
     }
 
-    // Play the background music
+    // Play the background music if sound is supported
     if (soundIsSupported()) {
         su.play(sources, 0, 156000, globalVolume, false);
     }
@@ -150,14 +150,15 @@ function soundIsSupported() {
     var a = new Audio();
     var failures = 0;
 
+
     for (var i = 0; i < sources.length; i++) {
-        if (a.canPlayType(sources[i][1]) !== "probably") {
+        if (a.canPlayType(sources[i][1]) !== "maybe") {
             failures++;
         }
     }
 
     if (failures !== sources.length) {
-        su = new SoundUtil()
+        su = new SoundUtil();
             return true;
     } else {
         return false;
