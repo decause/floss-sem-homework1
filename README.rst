@@ -16,9 +16,8 @@ Shout-out
 Much of the work has been informed by and inspired by Eric Heaney, who has done
 an excellent job thusfar this semester.
 
-Boilerplate
-===========
-
+Legal Notice
+============
 Portions of this code are from the book JavaScript: Making Isometric Social
 Real-Time Games with HTML5, CSS3 and Javascript (ISBN #978-1-4493-0475-1).
 Copyright 2011 by Mario Andres Pagella.
